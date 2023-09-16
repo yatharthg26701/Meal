@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MealApp</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css">
+    <script src="https://kit.fontawesome.com/e6f12e5790.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <a href="index.html">
+                <div class="top-logo">
+                    <span class="logo-text">Meal App</span>
+                </div>
+            </a>
+            <div class="side-drawer">
+                <div id="toggle-sidebar">
+                    <i class="fas fa-bars"></i>
+                    <span id="total-counter">0</span>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="sidebar">
+            <div class="top-gap"></div>
+            <div class="title small">Favorites</div>
+            <div class="fav" id="fav"></div>
+        </section>
+        <section id="flex-box">
+            <div class="container">
+                <header class="header">
+                    <div class="title">Discover Your Preferred Dishes</div>
+                </header>
+                <div id="search-bar">
+                    <div class="icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="new-search-input">
+                        <form onkeyup="showMealList()">
+                            <input id="search-input" type="text" placeholder="Search for Anything" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div id="cards-holder"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
